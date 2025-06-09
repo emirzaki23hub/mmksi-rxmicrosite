@@ -1,11 +1,16 @@
 import MainHeader from "@/components/main-header"
-import SectionUSP from "./SectionUSP"
+import SectionMap from "./section-map"
+import SectionUSP from "./section-usp"
 
 export default function Home() {
   return (
     <>
       <MainHeader />
-      <SectionUSP />
+
+      <main>
+        <SectionUSP />
+        <SectionMap />
+      </main>
     </>
   )
 }
