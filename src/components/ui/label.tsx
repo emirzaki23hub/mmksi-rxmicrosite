@@ -1,14 +1,17 @@
 "use client"
 
-import * as React from "react"
 import * as LabelPrimitive from "@radix-ui/react-label"
+import * as React from "react"
 
 import { cn } from "@/lib/tailwind"
+
+export type LabelProps = React.ComponentProps<typeof LabelPrimitive.Root>
+
 
 function Label({
   className,
   ...props
-}: React.ComponentProps<typeof LabelPrimitive.Root>) {
+}: LabelProps) {
   return (
     <LabelPrimitive.Root
       data-slot="label"
