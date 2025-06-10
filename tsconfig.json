@@ -20,7 +20,12 @@
       {
         "name": "ts-plugin-sort-import-suggestions",
         "moveUpPatterns": ["@/"],
-        "moveDownPatterns": ["@radix-ui", "lucide-react", "react-day-picker"]
+        "moveDownPatterns": [
+          "@radix-ui",
+          "lucide-react",
+          "react-day-picker",
+          "react-hook-form"
+        ]
       }
     ],
     "paths": {
