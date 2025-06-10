@@ -1,5 +1,6 @@
 import MainHeader from "@/components/main-header"
 import { Separator } from "@/components/ui/separator"
+import SectionCTA from "./section-cta"
 import SectionForm from "./section-form"
 import SectionMap from "./section-map"
 import SectionPost from "./section-post"
@@ -14,9 +15,11 @@ export default function Home() {
         <SectionUSP />
         <SectionMap />
         <SectionPost />
-        <Separator className="h-[10px] bg-primary"/>
-        <SectionForm/>
+        <Separator className="h-[10px] bg-primary" />
+        <SectionForm />
+        <SectionCTA />
       </main>
+      <Separator className="h-[10px] bg-primary" />
     </>
   )
 }

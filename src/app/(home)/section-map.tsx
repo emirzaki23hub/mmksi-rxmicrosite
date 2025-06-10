@@ -18,7 +18,7 @@ const MARKERS: MapMarkerProps[] = [
 const SectionMap = () => {
   return (
     <section className="flex min-h-[652px]">
-      <div className="max-w-[585px] w-full px-[60px] py-[100px] shrink-0 bg-black text-cold-gray text-[18px] leading-8">
+      <div className="max-w-[585px] w-full px-[60px] py-[100px] shrink-0 bg-black text-cold-gray text-lg leading-8">
         <h2 className="text-[38px] leading-12 font-medium text-white">
           Temukan lokasi box terdekatmu!
         </h2>
