@@ -1,10 +1,10 @@
-import SectionFull from "@/components/section-full"
+import BaseSection from "@/components/base/base-section"
 import Image from "next/image"
 import BackgroundImage from "~/images/background-usp.png"
 
 const SectionUSP = () => {
   return (
-    <SectionFull className="relative text-white">
+    <BaseSection fullHeight className="relative text-white">
       <Image
         src={BackgroundImage}
         alt="Background Image"
@@ -13,7 +13,7 @@ const SectionUSP = () => {
       />
 
       <div className="relative">USP Section</div>
-    </SectionFull>
+    </BaseSection>
   )
 }
 

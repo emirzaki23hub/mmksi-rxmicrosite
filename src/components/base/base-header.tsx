@@ -30,7 +30,7 @@ const NAV_ITEMS = [
   },
 ]
 
-const MainHeader = () => {
+const BaseHeader = () => {
   return (
     <header
       className="flex bg-black px-6 items-center"
@@ -53,4 +53,4 @@ const MainHeader = () => {
   )
 }
 
-export default MainHeader
+export default BaseHeader
