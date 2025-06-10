@@ -4,14 +4,24 @@ import { Label } from "../ui/label"
 
 export type BaseCheckboxProps = {
   label: React.ReactNode
+  classNames?: {
+    label?: string
+  }
 } & CheckboxProps
 
-const BaseCheckbox = ({ label, className, ...rest }: BaseCheckboxProps) => {
+const BaseCheckbox = ({
+  label,
+  className,
+  classNames,
+  ...rest
+}: BaseCheckboxProps) => {
   return (
     <Label className={cn("flex items-center gap-5", className)}>
       <Checkbox {...rest} />
 
-      <span className="text-xs font-medium leading-5">{label}</span>
+      <span className={cn("text-xs font-medium leading-5", classNames?.label)}>
+        {label}
+      </span>
     </Label>
   )
 }

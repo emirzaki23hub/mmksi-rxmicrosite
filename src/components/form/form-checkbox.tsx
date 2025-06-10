@@ -19,6 +19,10 @@ const FormCheckbox = <
   ...rest
 }: Required<Pick<ControllerProps<TFieldValues, TName>, "control" | "name">> & {
   label: string
+  classNames?: {
+    checkbox?: string
+    label?: string
+  }
 } & Pick<BaseCheckboxProps, "className">) => {
   return (
     <FormField
@@ -32,10 +36,11 @@ const FormCheckbox = <
             <FormLabel>
               <FormControl>
                 <BaseCheckbox
-                  className={rest.className}
                   checked={field.value}
                   onCheckedChange={(checked) => field.onChange(checked)}
                   label={label}
+                  className={rest.classNames?.checkbox}
+                  {...rest}
                 />
               </FormControl>
             </FormLabel>
