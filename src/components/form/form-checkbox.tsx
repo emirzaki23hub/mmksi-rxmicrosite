@@ -28,8 +28,6 @@ const FormCheckbox = <
     <FormField
       control={control}
       name={name}
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      defaultValue={"" as any}
       render={({ field }) => (
         <FormItem className={className}>
           <div className="flex items-center gap-5">
