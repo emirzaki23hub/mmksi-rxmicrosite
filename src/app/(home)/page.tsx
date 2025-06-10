@@ -1,3 +1,4 @@
+import BaseFooter from "@/components/base/base-footer"
 import BaseHeader from "@/components/base/base-header"
 import { Separator } from "@/components/ui/separator"
 import SectionCTA from "./section-cta"
@@ -19,7 +20,10 @@ export default function Home() {
         <SectionForm />
         <SectionCTA />
       </main>
+
       <Separator className="h-[10px] bg-primary" />
+
+      <BaseFooter />
     </>
   )
 }
