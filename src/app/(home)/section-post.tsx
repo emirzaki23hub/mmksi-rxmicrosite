@@ -32,7 +32,7 @@ const SectionPost = () => {
                   <Image
                     src={index % 2 === 0 ? DummyImage1 : DummyImage2}
                     alt={`Post Thumbnail ${index + 1}`}
-                    layout="fill"
+                    fill
                     className="object-cover"
                   />
                   {index % 2 === 0 && (
