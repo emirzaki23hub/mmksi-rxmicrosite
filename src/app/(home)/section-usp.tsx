@@ -35,7 +35,6 @@ const SectionUSP = () => {
           start: "-op top",
           end: "+=5000 bottom",
           scrub: 1,
-          markers: true,
         },
       })
 
