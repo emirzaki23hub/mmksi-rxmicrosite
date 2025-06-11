@@ -27,7 +27,7 @@ const BaseFooterNewsletter = () => {
   })
   return (
     <Form {...form}>
-      <form onSubmit={handleSubmit} className="space-y-6 md:mt-8">
+      <form onSubmit={handleSubmit} className="space-y-6">
         <FormInput
           control={form.control}
           name="email"

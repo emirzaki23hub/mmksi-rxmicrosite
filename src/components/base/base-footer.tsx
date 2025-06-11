@@ -202,7 +202,7 @@ const BaseFooter = () => {
         </section>
 
         {/* Mobile */}
-        <Accordion type="multiple" className="">
+        <Accordion type="multiple" className="lg:hidden">
           {LINKS.map((linkGroup) => (
             <AccordionItem
               key={linkGroup.category}

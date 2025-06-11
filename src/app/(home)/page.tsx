@@ -6,6 +6,7 @@ import SectionForm from "./section-form"
 import SectionMap from "./section-map"
 import SectionPost from "./section-post"
 import SectionUSP from "./section-usp"
+import SectionBanner from "./section-banner"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <BaseHeader />
 
       <main>
+        <SectionBanner />
         <SectionUSP />
         <SectionMap />
         <SectionPost />
